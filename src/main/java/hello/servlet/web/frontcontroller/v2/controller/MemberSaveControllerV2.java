@@ -5,7 +5,6 @@ import hello.servlet.domain.member.MemberRepository;
 import hello.servlet.web.frontcontroller.MyView;
 import hello.servlet.web.frontcontroller.v2.ControllerV2;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -26,7 +25,7 @@ public class MemberSaveControllerV2 implements ControllerV2 {
         //Model에 데이터를 보관한다.
         request.setAttribute("member", member);
 
-        return new MyView("/WEB-INF/views/save_result.jsp");
+        return new MyView("/WEB-INF/views/save-result.jsp");
 
     }
 }
